@@ -8,36 +8,36 @@ import java.util.List;
 @RequestMapping("/api/kleidung")
 public class KleidungController {
 
-    private  KleidungRepository repository;
+    private  KleidungRepository kleidungRepo;
 
     public KleidungController(KleidungRepository repository) {
-        this.repository = repository;
+        this.kleidungRepo = repository;
     }
 
     // Alle Kleidungsstücke abrufen
     @GetMapping
     public List<Kleidung> getAll() {
-        return repository.findAll();
+        return kleidungRepo.findAll();
     }
 
     // Kleidung einlagern
     @PostMapping
     public Kleidung addKleidung(@RequestBody Kleidung kleidung) {
-        return repository.save(kleidung);
+        return kleidungRepo.save(kleidung);
     }
 
     // Kleidung umlagern (zB. Lager ändern)
     @PutMapping("/{id}")
     public Kleidung updateLager(@PathVariable Long id, @RequestBody Kleidung updated) {
-        return repository.findById(id).map(k -> {
+        return kleidungRepo.findById(id).map(k -> {
             k.setLager(updated.getLager());
-            return repository.save(k);
+            return kleidungRepo.save(k);
         }).orElseThrow(() -> new RuntimeException("Kleidung nicht gefunden"));
     }
 
     // Kleidung aus dem Lager entfernen
     @DeleteMapping("/{id}")
     public void deleteKleidung(@PathVariable Long id) {
-        repository.deleteById(id);
+        kleidungRepo.deleteById(id);
     }
 }
