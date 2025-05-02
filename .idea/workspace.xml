@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383b1c7c-866d-4bfd-a420-b9f7d0b623fc" name="Änderungen" comment="edit" />
+    <list default="true" id="383b1c7c-866d-4bfd-a420-b9f7d0b623fc" name="Änderungen" comment="edit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +54,7 @@
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ibrah/IdeaProjects/frontend25&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ibrah/IdeaProjects/webtech25&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,6 +74,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ibrah\IdeaProjects\webtech25" />
       <recent name="C:\Users\ibrah\IdeaProjects\webtech25\Webtech25" />
       <recent name="C:\Users\ibrah\IdeaProjects\webtech25\Webtech25\Webtech25" />
     </key>
@@ -97,7 +100,11 @@
       <workItem from="1745351855214" duration="33000" />
       <workItem from="1745351895618" duration="1331000" />
       <workItem from="1745354733987" duration="6372000" />
-      <workItem from="1746172228356" duration="2203000" />
+      <workItem from="1746172228356" duration="2513000" />
+      <workItem from="1746175397343" duration="112000" />
+      <workItem from="1746175516286" duration="47000" />
+      <workItem from="1746175655074" duration="262000" />
+      <workItem from="1746175998291" duration="61000" />
     </task>
     <task id="LOCAL-00001" summary="Spring">
       <option name="closed" value="true" />
@@ -147,7 +154,23 @@
       <option name="project" value="LOCAL" />
       <updated>1746173304600</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="edit">
+      <option name="closed" value="true" />
+      <created>1746174646271</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1746174646271</updated>
+    </task>
+    <task id="LOCAL-00008" summary="edit">
+      <option name="closed" value="true" />
+      <created>1746174654854</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1746174654854</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
