@@ -4,8 +4,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+@CrossOrigin(origins = "*")
 @RestController
-@RequestMapping("/kleidung")
+@RequestMapping("/api/kleidung")
 public class KleidungController {
 
     private  KleidungRepository kleidungRepo;
