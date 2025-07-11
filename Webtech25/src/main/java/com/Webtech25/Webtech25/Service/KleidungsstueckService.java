@@ -15,7 +15,7 @@ import java.util.Optional;
 public class KleidungsstueckService {
 
     @Autowired
-    private KleidungsstueckRepository kleidungsstueckRepository;
+    public KleidungsstueckRepository kleidungsstueckRepository;
 
     public Kleidungsstueck speichereKleidungsstueck(Kleidungsstueck kleidungsstueck) {
         validiereKleidungsstueck(kleidungsstueck);
