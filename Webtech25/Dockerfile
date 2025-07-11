@@ -1,9 +1,9 @@
 FROM gradle:jdk21-jammy AS build
 COPY --chown=gradle:gradle . /home/gradle/src
 WORKDIR /home/gradle/src
-ARG DB_PASSWORD
-ARG DB_URL
-ARG DB_USER
+ARG DATABASE_password
+ARG DATABASE_URL
+ARG DATABASE_username
 RUN gradle build --no-daemon
 
 FROM eclipse-temurin:21-jdk-jammy
