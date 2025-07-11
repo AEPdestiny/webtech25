@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: webtech25-backend
+    env: java
+    buildCommand: |
+      chmod +x gradlew
+      ./gradlew build
+    startCommand: ./gradlew bootRun
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: production
