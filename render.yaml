@@ -3,7 +3,7 @@ services:
     name: webtech25-backend
     env: java
     buildCommand: |
-      chmod +x gradlew
+      chmod +x ./gradlew
       ./gradlew build
     startCommand: ./gradlew bootRun
     envVars:

@@ -4,37 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/Dockerfile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/README.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/render.yaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/KleidungsstueckController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Entity/Benutzer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Repository/BenutzerRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Repository/KleidungsstueckRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Service/KleidungsstueckService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/test/java/com/Webtech25/Webtech25/KleidungsverwaltungApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Webtech25/src/test/java/com/Webtech25/Webtech25/Service/KleidungsstueckServiceTest.java" beforeDir="false" />
-    </list>
+    <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +61,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -111,11 +85,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752503088781</updated>
-      <workItem from="1752503089708" duration="17000" />
+      <workItem from="1752503089708" duration="356000" />
     </task>
+    <task id="LOCAL-00001" summary="ordner">
+      <option name="closed" value="true" />
+      <created>1752503190070</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1752503190070</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ordner">
+      <option name="closed" value="true" />
+      <created>1752503210130</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1752503210130</updated>
+    </task>
+    <task id="LOCAL-00003" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752503237626</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1752503237626</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ordner" />
+    <MESSAGE value="edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="edit" />
   </component>
 </project>
