@@ -2,7 +2,6 @@ package com.Webtech25.Webtech25.Service;
 
 import com.Webtech25.Webtech25.Entity.Benutzer;
 import com.Webtech25.Webtech25.Repository.BenutzerRepository;
-import com.Webtech25.Webtech25.Repository.KleidungsstueckRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;

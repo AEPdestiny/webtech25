@@ -1,6 +1,5 @@
 package com.Webtech25.Webtech25.Entity;
 
-import com.Webtech25.Webtech25.Entity.Benutzer;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;

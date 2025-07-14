@@ -1,8 +1,6 @@
 
 package com.Webtech25.Webtech25;
 
-import com.Webtech25.Webtech25.Entity.Kleidungsstueck;
-import com.Webtech25.Webtech25.Repository.KleidungsstueckRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

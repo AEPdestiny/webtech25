@@ -5,7 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,24 +42,24 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "AEPdestiny"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;AEPdestiny&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/AEPdestiny/webtech25.git",
-    "accountId": "f46b7057-bdb3-40f7-aa14-57efebd992d0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/AEPdestiny/webtech25.git&quot;,
+    &quot;accountId&quot;: &quot;f46b7057-bdb3-40f7-aa14-57efebd992d0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2zrxdxuqzewmY4y4VsoHwqobLzE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,6 +67,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Load Gradle Dependencies.executor": "Run",
     "Gradle.webtech25 [dependencies].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -72,14 +78,14 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "SDKs",
+    "project.structure.last.edited": "Problems",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.notifications",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.webtech25 [dependencies]">
     <configuration name="webtech25 [dependencies]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -101,6 +107,14 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
       <method v="2" />
+    </configuration>
+    <configuration name="KleidungsverwaltungApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="webtech25.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.Webtech25.Webtech25.KleidungsverwaltungApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <recent_temporary>
       <list>
@@ -124,7 +138,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752503088781</updated>
-      <workItem from="1752503089708" duration="4417000" />
+      <workItem from="1752503089708" duration="6400000" />
+      <workItem from="1752509548307" duration="3013000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -246,7 +261,31 @@
       <option name="project" value="LOCAL" />
       <updated>1752506813904</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752507519544</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1752507519544</updated>
+    </task>
+    <task id="LOCAL-00017" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752507622019</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1752507622019</updated>
+    </task>
+    <task id="LOCAL-00018" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752507695074</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1752507695074</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
