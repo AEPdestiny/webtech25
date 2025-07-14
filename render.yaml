@@ -10,6 +10,6 @@ services:
       - key: SPRING_PROFILES_ACTIVE
         value: production
       - key: JAVA_HOME
-        value: /opt/render/.jdk
+        value: C:\Users\ibrah\.jdks\openjdk-21.0.1
       - key: SPRING_PROFILES_ACTIVE
         value: production
