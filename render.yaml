@@ -3,8 +3,7 @@ services:
     name: webtech25-backend
     env: java
     buildCommand: |
-      apt-get update -y
-      apt-get install -y --no-install-recommends openjdk-17-jdk
+      
       export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
       ./gradlew build
     startCommand: |
@@ -13,3 +12,6 @@ services:
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production
+
+
+
