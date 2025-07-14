@@ -3,11 +3,13 @@ services:
     name: webtech25-backend
     env: java
     buildCommand: |
-      chmod +x ./gradlew
+      apt-get update -y
+      apt-get install -y --no-install-recommends openjdk-17-jdk
+      export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
       ./gradlew build
-    startCommand: ./gradlew bootRun
+    startCommand: |
+      export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+      ./gradlew bootRun
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production
-      - key: JAVA_HOME
-        value: c/Users/ibrah/.jdks/openjdk-21.0.1
