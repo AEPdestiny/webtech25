@@ -1,11 +1,11 @@
-FROM gradle:jdk21-jammy AS build
-COPY --chown=gradle:gradle . /home/gradle/src
-WORKDIR /home/gradle/src
-ARG DATABASE_password
-ARG DATABASE_URL
-ARG DATABASE_username
-RUN gradle build --no-daemon
+# ---------- BUILD-STAGE ----------
+FROM gradle:8.7.0-jdk21 AS build
+WORKDIR /workspace
+COPY . .
+RUN gradle bootJar --no-daemon
 
-FROM eclipse-temurin:21-jdk-jammy
-COPY --from=build /Users/ibrah/IdeaProjects/webtech25/build/libs/webtech25-0.0.1-SNAPSHOT-plain.jar
-ENTRYPOINT ["java","-jar","/app.jar"]
+# ---------- RUNTIME-STAGE ----------
+FROM eclipse-temurin:21-jre-jammy
+WORKDIR /app
+COPY --from=build /workspace/build/libs/*.jar app.jar
+ENTRYPOINT ["java","-jar","/app/app.jar"]
