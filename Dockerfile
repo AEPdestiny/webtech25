@@ -9,5 +9,5 @@ RUN gradle bootJar --no-daemon          # erzeugt build/libs/…jar
 
 # ---------- Run-Stage ----------------------------
 FROM eclipse-temurin:21-jre-jammy       # nur JRE für Runtime nötig
-COPY --from=build /home/gradle/src/build/libs/*.jar /app.jar
+COPY --from=build /Users/ibrah/IdeaProjects/webtech25/build/libs/webtech25-0.0.1-SNAPSHOT-plain.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
