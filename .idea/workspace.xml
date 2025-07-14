@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-    </list>
+    <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -88,7 +86,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1752503088781</updated>
-      <workItem from="1752503089708" duration="1713000" />
+      <workItem from="1752503089708" duration="2074000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -170,7 +168,23 @@
       <option name="project" value="LOCAL" />
       <updated>1752504722427</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752504911758</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1752504911758</updated>
+    </task>
+    <task id="LOCAL-00012" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752505054474</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1752505054474</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
