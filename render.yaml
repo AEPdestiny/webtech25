@@ -3,15 +3,12 @@ services:
     name: webtech25-backend
     env: java
     buildCommand: |
-      
-      export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+      chmod +x ./gradlew
       ./gradlew build
-    startCommand: |
-      export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
-      ./gradlew bootRun
+    startCommand: ./gradlew bootRun
     envVars:
       - key: SPRING_PROFILES_ACTIVE
         value: production
-
-
+      - key: JAVA_HOME
+        value: C:\Users\ibrah\.jdks\openjdk-21.0.1
 
