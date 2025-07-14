@@ -2,7 +2,6 @@ services:
   - type: web
     name: webtech25-backend
     env: java
-    rootdir: ./Webtech25
     buildCommand: |
       chmod +x gradlew
       ./gradlew build
