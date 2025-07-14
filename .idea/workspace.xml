@@ -4,79 +4,97 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="383b1c7c-866d-4bfd-a420-b9f7d0b623fc" name="Änderungen" comment="edit" />
+    <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/README.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/render.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Controller/KleidungsstueckController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Entity/Benutzer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Repository/BenutzerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Repository/KleidungsstueckRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/java/com/Webtech25/Webtech25/Service/KleidungsstueckService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/test/java/com/Webtech25/Webtech25/KleidungsverwaltungApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Webtech25/src/test/java/com/Webtech25/Webtech25/Service/KleidungsstueckServiceTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="JavaScript File" />
-      </list>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Webtech25" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory">{
-  &quot;lastFilter&quot;: {
-    &quot;state&quot;: &quot;OPEN&quot;,
-    &quot;assignee&quot;: &quot;AEPdestiny&quot;
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "AEPdestiny"
   }
-}</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/AEPdestiny/webtech25.git&quot;,
-    &quot;accountId&quot;: &quot;f46b7057-bdb3-40f7-aa14-57efebd992d0&quot;
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/AEPdestiny/webtech25.git",
+    "accountId": "f46b7057-bdb3-40f7-aa14-57efebd992d0"
   }
-}</component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 1
-}</component>
-  <component name="ProjectId" id="2w5nbKmedk9ZgkjRxRKXYkvjFUq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2zrxdxuqzewmY4y4VsoHwqobLzE" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.C:/Users/ibrah/IdeaProjects/webtech25/Webtech25/Webtech25/build.gradle.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/ibrah/IdeaProjects/webtech25&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ibrah\IdeaProjects\webtech25" />
-      <recent name="C:\Users\ibrah\IdeaProjects\webtech25\Webtech25" />
-      <recent name="C:\Users\ibrah\IdeaProjects\webtech25\Webtech25\Webtech25" />
-    </key>
-  </component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -85,119 +103,19 @@
       </set>
     </attachedChunks>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="Anwendungsebene" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Standardaufgabe">
-      <changelist id="383b1c7c-866d-4bfd-a420-b9f7d0b623fc" name="Änderungen" comment="" />
-      <created>1745340373037</created>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="" />
+      <created>1752503088781</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1745340373037</updated>
-      <workItem from="1745340374159" duration="5853000" />
-      <workItem from="1745349469594" duration="2200000" />
-      <workItem from="1745351855214" duration="33000" />
-      <workItem from="1745351895618" duration="1331000" />
-      <workItem from="1745354733987" duration="6372000" />
-      <workItem from="1746172228356" duration="2513000" />
-      <workItem from="1746175397343" duration="112000" />
-      <workItem from="1746175516286" duration="47000" />
-      <workItem from="1746175655074" duration="262000" />
-      <workItem from="1746175998291" duration="61000" />
-      <workItem from="1746780534725" duration="6000" />
-      <workItem from="1751614315393" duration="16000" />
+      <updated>1752503088781</updated>
+      <workItem from="1752503089708" duration="17000" />
     </task>
-    <task id="LOCAL-00001" summary="Spring">
-      <option name="closed" value="true" />
-      <created>1745341540489</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1745341540489</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Entity + Controller">
-      <option name="closed" value="true" />
-      <created>1745342720710</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1745342720710</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Vue">
-      <option name="closed" value="true" />
-      <created>1745350935673</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1745350935673</updated>
-    </task>
-    <task id="LOCAL-00004" summary="edits">
-      <option name="closed" value="true" />
-      <created>1745357330815</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1745357330815</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Dockerfile">
-      <option name="closed" value="true" />
-      <created>1745361062095</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1745361062095</updated>
-    </task>
-    <task id="LOCAL-00006" summary="edit">
-      <option name="closed" value="true" />
-      <created>1746173304600</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1746173304600</updated>
-    </task>
-    <task id="LOCAL-00007" summary="edit">
-      <option name="closed" value="true" />
-      <created>1746174646271</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1746174646271</updated>
-    </task>
-    <task id="LOCAL-00008" summary="edit">
-      <option name="closed" value="true" />
-      <created>1746174654854</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1746174654854</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Spring" />
-    <MESSAGE value="Entity + Controller" />
-    <MESSAGE value="Vue" />
-    <MESSAGE value="edits" />
-    <MESSAGE value="Dockerfile" />
-    <MESSAGE value="edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="edit" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
