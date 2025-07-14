@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: webtech25-backend
+    name: Webtech25
     env: java
     buildCommand: |
       chmod +x gradlew
