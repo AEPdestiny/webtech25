@@ -65,16 +65,15 @@ public class Sicherheitskonfiguration {
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOrigins(List.of(
                 "http://localhost:3000",
-                "https://AEPdestiny.github.io",
-                "https://webtech2-caqk.onrender.com"
+                "https://AEPdestiny.github.io"
         ));
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
         configuration.setAllowedHeaders(List.of("*"));
-        configuration.setAllowCredentials(true);
+        configuration.setAllowCredentials(true); // 🔥 WICHTIG: Cookies erlauben
+        configuration.setExposedHeaders(List.of("Set-Cookie")); // Cookie sichtbar machen
 
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
-
 }

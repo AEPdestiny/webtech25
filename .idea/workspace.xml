@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/AuthApiController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" afterDir="false" />
     </list>
@@ -196,7 +195,7 @@
       <updated>1752503088781</updated>
       <workItem from="1752503089708" duration="6400000" />
       <workItem from="1752509548307" duration="5332000" />
-      <workItem from="1752539603880" duration="13501000" />
+      <workItem from="1752539603880" duration="14719000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -382,7 +381,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752553193892</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752555322593</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1752555322593</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
