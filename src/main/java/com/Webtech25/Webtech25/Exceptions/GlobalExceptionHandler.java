@@ -1,4 +1,4 @@
-package com.Webtech25.Webtech25.Controller;
+package com.Webtech25.Webtech25.Exceptions;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;

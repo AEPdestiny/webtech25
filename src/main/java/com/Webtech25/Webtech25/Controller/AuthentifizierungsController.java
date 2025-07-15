@@ -1,12 +1,13 @@
 package com.Webtech25.Webtech25.Controller;
 
 import com.Webtech25.Webtech25.Entity.Benutzer;
+import com.Webtech25.Webtech25.Exceptions.EmailExistsException;
 import com.Webtech25.Webtech25.Service.BenutzerService;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity; // WICHTIG: Dieser Import fehlt
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -19,8 +20,12 @@ import java.util.Optional;
 @RequestMapping("/auth")
 public class AuthentifizierungsController {
 
+    private final BenutzerService benutzerService;
+
     @Autowired
-    private BenutzerService benutzerService;
+    public AuthentifizierungsController(BenutzerService benutzerService) {
+        this.benutzerService = benutzerService;
+    }
 
     @GetMapping("/anmelden")
     public String anmeldeFormular(Model model) {
@@ -32,19 +37,17 @@ public class AuthentifizierungsController {
     public String anmelden(@RequestParam String email,
                            @RequestParam String passwort,
                            HttpSession session,
-                           RedirectAttributes umleitungsAttribute) {
+                           RedirectAttributes redirectAttributes) {
 
-        Optional<Benutzer> optionalBenutzer = benutzerService.findeNachEmail(email);
+        Optional<Benutzer> optionalBenutzer = benutzerService.validiereAnmeldedaten(email, passwort);
         if (optionalBenutzer.isPresent()) {
             Benutzer benutzer = optionalBenutzer.get();
-            if (benutzerService.validierePasswort(benutzer, passwort)) {
-                session.setAttribute("benutzer", benutzer);
-                session.setAttribute("benutzerId", benutzer.getId());
-                return "redirect:/dashboard";
-            }
+            session.setAttribute("benutzer", benutzer);
+            session.setAttribute("benutzerId", benutzer.getId());
+            return "redirect:/dashboard";
         }
 
-        umleitungsAttribute.addFlashAttribute("fehler", "Ungültige Anmeldedaten");
+        redirectAttributes.addFlashAttribute("error", "Ungültige Anmeldedaten");
         return "redirect:/auth/anmelden";
     }
 
@@ -55,42 +58,40 @@ public class AuthentifizierungsController {
     }
 
     @PostMapping("/registrieren")
-    public String registrieren(@Valid @ModelAttribute Benutzer benutzer,
+    public String registrieren(@Valid @ModelAttribute("benutzer") Benutzer benutzer,
                                BindingResult bindingResult,
                                @RequestParam String passwortBestaetigen,
-                               RedirectAttributes umleitungsAttribute) {
+                               RedirectAttributes redirectAttributes) {
 
         if (bindingResult.hasErrors()) {
             return "auth/registrieren";
         }
 
         if (!benutzer.getPasswort().equals(passwortBestaetigen)) {
-            bindingResult.rejectValue("passwort", "fehler.passwort", "Passwörter stimmen nicht überein");
+            bindingResult.rejectValue("passwort", "error.passwort", "Passwörter stimmen nicht überein");
             return "auth/registrieren";
         }
 
         try {
-            benutzerService.registriereBenutzer(benutzer.getEmail(), benutzer.getPasswort(),
-                    benutzer.getVorname(), benutzer.getNachname());
-            umleitungsAttribute.addFlashAttribute("erfolg", "Registrierung erfolgreich! Bitte melden Sie sich an.");
+            benutzerService.registriereBenutzer(benutzer);
+            redirectAttributes.addFlashAttribute("success", "Registrierung erfolgreich! Bitte melden Sie sich an.");
             return "redirect:/auth/anmelden";
-        } catch (RuntimeException e) {
-            bindingResult.rejectValue("email", "fehler.email", e.getMessage());
+        } catch (EmailExistsException e) {
+            bindingResult.rejectValue("email", "error.email", e.getMessage());
             return "auth/registrieren";
         }
     }
 
-    // Aktuellen Benutzer Endpunkt hinzufügen
     @GetMapping("/current-user")
-    @ResponseBody // WICHTIG für @Controller
+    @ResponseBody
     public ResponseEntity<Benutzer> getCurrentUser(HttpSession session) {
         Long benutzerId = (Long) session.getAttribute("benutzerId");
         if (benutzerId == null) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
         }
-        Optional<Benutzer> benutzer = benutzerService.findeNachId(benutzerId);
-        return benutzer.map(ResponseEntity::ok)
-                .orElseGet(() -> ResponseEntity.notFound().build());
+        return benutzerService.findeNachId(benutzerId)
+                .map(ResponseEntity::ok)
+                .orElse(ResponseEntity.notFound().build());
     }
 
     @GetMapping("/abmelden")
@@ -98,4 +99,5 @@ public class AuthentifizierungsController {
         session.invalidate();
         return "redirect:/auth/anmelden";
     }
+
 }
