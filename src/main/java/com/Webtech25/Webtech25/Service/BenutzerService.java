@@ -106,7 +106,7 @@ public class BenutzerService {
     public String createTestUser() {
         Benutzer test = new Benutzer();
         test.setEmail("test@example.com");
-        test.setPasswort(passwordEncoder.encode("test123")); // Korrekt gehasht
+        test.setPasswort(passwordEncoder.encode("test123"));
         benutzerRepository.save(test);
         return "Testbenutzer erstellt (ID: " + test.getId() + ")";
     }

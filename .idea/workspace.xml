@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/TestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Exceptions/EmailExistsException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Exceptions/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/WebConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungApiController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -199,7 +199,7 @@
       <updated>1752503088781</updated>
       <workItem from="1752503089708" duration="6400000" />
       <workItem from="1752509548307" duration="5332000" />
-      <workItem from="1752539603880" duration="6847000" />
+      <workItem from="1752539603880" duration="11327000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -369,7 +369,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752545372997</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752547649841</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1752547649841</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
