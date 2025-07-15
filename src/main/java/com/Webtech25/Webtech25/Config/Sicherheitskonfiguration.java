@@ -2,6 +2,7 @@ package com.Webtech25.Webtech25.Config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -27,25 +28,34 @@ public class Sicherheitskonfiguration {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/auth/**", "/css/**", "/js/**", "/images/**", "/api/test/**").permitAll()
-                        .requestMatchers("/api/**").authenticated()
+                        .requestMatchers("/auth/**", "/css/**", "/js/**", "/images/**").permitAll()
                         .anyRequest().authenticated()
                 )
                 .formLogin(form -> form
-                        .loginPage("/auth/anmelden")
+                        .loginPage("/auth/anmelden") // Für Browser-Login (falls benötigt)
+                        .loginProcessingUrl("/api/auth/anmelden") // API-Login-Endpunkt
+                        .successHandler((request, response, authentication) -> {
+                            // Erfolgsantwort für API-Calls (JSON-kompatibel)
+                            response.setStatus(HttpStatus.OK.value());
+                            response.setContentType("application/json");
+                            response.getWriter().write("{\"success\": true}");
+                        })
+                        .failureHandler((request, response, exception) -> {
+                            // Fehlerantwort für API-Calls
+                            response.setStatus(HttpStatus.UNAUTHORIZED.value());
+                            response.setContentType("application/json");
+                            response.getWriter().write("{\"success\": false, \"error\": \"Login failed\"}");
+                        })
                         .permitAll()
                 )
                 .logout(logout -> logout
-                        .logoutUrl("/auth/abmelden")
-                        .logoutSuccessUrl("/auth/anmelden")
+                        .logoutUrl("/api/auth/abmelden") // API-Logout
+                        .logoutSuccessHandler((request, response, authentication) -> {
+                            response.setStatus(HttpStatus.OK.value());
+                        })
                         .permitAll()
                 )
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED)
-                )
-                .csrf(csrf -> csrf
-                        .ignoringRequestMatchers("/api/**") // CSRF nur für API deaktivieren
-                );
+                .csrf(csrf -> csrf.disable());
 
         return http.build();
     }
@@ -66,4 +76,5 @@ public class Sicherheitskonfiguration {
         source.registerCorsConfiguration("/**", configuration);
         return source;
     }
+
 }
