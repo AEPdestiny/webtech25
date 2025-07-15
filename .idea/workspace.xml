@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +21,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -127,10 +130,17 @@
     </configuration>
     <configuration name="webtech25 [processResources]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
+        <option name="env">
+          <map>
+            <entry key="DATABASE_URL" value="jdbc:postgresql://dpg-d1ocs53uibrs73cjvmm0-a.frankfurt-postgres.render.com:5432/db_webtech25" />
+            <entry key="DATABASE_password" value="AT2XM9bITMGuTY4DqLRXDJ7PDwkrYP57" />
+            <entry key="DATABASE_username" value="db_webtech25_user" />
+          </map>
+        </option>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
+        <option name="scriptParameters" value="" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -143,6 +153,18 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <EXTENSION ID="com.intellij.execution.ExternalSystemRunConfigurationJavaExtension">
+        <extension name="net.ashald.envfile">
+          <option name="IS_ENABLED" value="false" />
+          <option name="IS_SUBST" value="false" />
+          <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+          <option name="IS_IGNORE_MISSING_FILES" value="false" />
+          <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+          <ENTRIES>
+            <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+          </ENTRIES>
+        </extension>
+      </EXTENSION>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
       <method v="2" />
@@ -167,6 +189,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Gradle.webtech25 [dependencies]" />
+      <item itemvalue="Gradle.webtech25 [processResources]" />
+      <item itemvalue="JAR Application.gradle-wrapper.jar" />
+      <item itemvalue="JAR Application.webtech25-0.0.1-SNAPSHOT-plain.jar" />
+      <item itemvalue="JAR Application.webtech25-0.0.1-SNAPSHOT.jar" />
+      <item itemvalue="Spring Boot.KleidungsverwaltungApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.webtech25 [processResources]" />
@@ -195,7 +225,7 @@
       <updated>1752503088781</updated>
       <workItem from="1752503089708" duration="6400000" />
       <workItem from="1752509548307" duration="5332000" />
-      <workItem from="1752539603880" duration="14719000" />
+      <workItem from="1752539603880" duration="17926000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -389,7 +419,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752555322593</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752556638779</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1752556638779</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
