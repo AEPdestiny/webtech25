@@ -5,6 +5,8 @@ import com.Webtech25.Webtech25.Service.BenutzerService;
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity; // WICHTIG: Dieser Import fehlt
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -76,6 +78,19 @@ public class AuthentifizierungsController {
             bindingResult.rejectValue("email", "fehler.email", e.getMessage());
             return "auth/registrieren";
         }
+    }
+
+    // Aktuellen Benutzer Endpunkt hinzufügen
+    @GetMapping("/current-user")
+    @ResponseBody // WICHTIG für @Controller
+    public ResponseEntity<Benutzer> getCurrentUser(HttpSession session) {
+        Long benutzerId = (Long) session.getAttribute("benutzerId");
+        if (benutzerId == null) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).build();
+        }
+        Optional<Benutzer> benutzer = benutzerService.findeNachId(benutzerId);
+        return benutzer.map(ResponseEntity::ok)
+                .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
     @GetMapping("/abmelden")

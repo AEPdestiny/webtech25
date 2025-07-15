@@ -23,7 +23,7 @@ public class Sicherheitskonfiguration {
     }
 
     @Bean
-    public SecurityFilterChain sicherheitsFilterKette(HttpSecurity http) throws Exception {
+    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/auth/**", "/css/**", "/js/**", "/images/**").permitAll()
@@ -38,16 +38,23 @@ public class Sicherheitskonfiguration {
                         .logoutSuccessUrl("/auth/anmelden")
                         .permitAll()
                 )
-                .csrf().disable();
+                .csrf(csrf -> csrf.disable()); // Modernisierte CSRF-Deaktivierung
 
         return http.build();
     }
+    // In Sicherheitskonfiguration.java
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration configuration = new CorsConfiguration();
-        configuration.setAllowedOrigins(List.of("http://localhost:3000")); // Ihr Vue-Port
-        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE"));
+        configuration.setAllowedOrigins(List.of(
+                "http://localhost:3000",
+                "https://AEPdestiny.github.io",
+                "https://webtech2-caqk.onrender.com"
+        ));
+        configuration.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         configuration.setAllowedHeaders(List.of("*"));
+        configuration.setAllowCredentials(true);
+
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         source.registerCorsConfiguration("/**", configuration);
         return source;

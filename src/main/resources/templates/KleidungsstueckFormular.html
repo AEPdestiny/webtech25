@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title th:text="${isEdit ? 'Bearbeiten' : 'Neues Kleidungsstück'}"></title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container mt-4">
+  <h1 th:text="${isEdit ? 'Kleidungsstück bearbeiten' : 'Neues Kleidungsstück'}"></h1>
+
+  <form th:action="@{/kleidungsstueck/speichern}" th:object="${kleidungsstueck}" method="post">
+    <div class="mb-3">
+      <label class="form-label">Bezeichnung*</label>
+      <input type="text" class="form-control" th:field="*{bezeichnung}" required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Größe*</label>
+      <select class="form-select" th:field="*{groesse}" required>
+        <option th:each="size : ${groessen}"
+                th:value="${size}"
+                th:text="${size}"></option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Lagerbestand*</label>
+      <input type="number" class="form-control" th:field="*{lagerbestand}" min="0" required>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Speichern</button>
+  </form>
+</div>
+</body>
+</html>

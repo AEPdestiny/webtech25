@@ -43,4 +43,6 @@ public class KleidungController {
     public void deleteKleidung(@PathVariable Long id) {
         kleidungstueckRepository.deleteById(id);
     }
+
+
 }

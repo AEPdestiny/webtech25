@@ -5,12 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b579a346-923b-4277-a294-64ebdb29ff75" name="Changes" comment="edit">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungApiController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/Dashboard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/KleidungsstueckFormular.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/anmelden.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Entity/Kleidungsstueck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/KleidungsverwaltungApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Service/BenutzerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/Sicherheitskonfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Config/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/AuthentifizierungsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/Webtech25/Webtech25/Controller/KleidungController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +42,14 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -67,8 +79,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "Downloaded.Files.Path.Enabled": "false",
     "Gradle.Load Gradle Dependencies.executor": "Run",
     "Gradle.webtech25 [dependencies].executor": "Run",
+    "JAR Application.gradle-wrapper.jar.executor": "Run",
+    "JAR Application.webtech25-0.0.1-SNAPSHOT-plain.jar.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "false",
+    "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "main",
@@ -108,6 +127,18 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="gradle-wrapper.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webtech25-0.0.1-SNAPSHOT-plain.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/webtech25-0.0.1-SNAPSHOT-plain.jar" />
+      <method v="2" />
+    </configuration>
+    <configuration name="webtech25-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/webtech25-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="KleidungsverwaltungApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="webtech25.main" />
@@ -119,6 +150,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.webtech25 [dependencies]" />
+        <item itemvalue="JAR Application.webtech25-0.0.1-SNAPSHOT.jar" />
+        <item itemvalue="JAR Application.webtech25-0.0.1-SNAPSHOT-plain.jar" />
+        <item itemvalue="JAR Application.gradle-wrapper.jar" />
       </list>
     </recent_temporary>
   </component>
@@ -139,7 +173,8 @@
       <option name="presentableId" value="Default" />
       <updated>1752503088781</updated>
       <workItem from="1752503089708" duration="6400000" />
-      <workItem from="1752509548307" duration="3013000" />
+      <workItem from="1752509548307" duration="5332000" />
+      <workItem from="1752539603880" duration="3641000" />
     </task>
     <task id="LOCAL-00001" summary="ordner">
       <option name="closed" value="true" />
@@ -285,7 +320,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752507695074</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="edit">
+      <option name="closed" value="true" />
+      <created>1752513884021</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1752513884021</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
