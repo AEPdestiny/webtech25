@@ -19,6 +19,13 @@ configurations {
 	}
 }
 
+processResources {
+	duplicatesStrategy = DuplicatesStrategy.INCLUDE
+	from('src/main/resources') {
+		include '**/*.html'
+	}
+}
+
 repositories {
 	mavenCentral()
 }
